@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sterling Elite — Closing the Experience Gap · Executive Education & Advisory</title>
-<meta name="description" content="Sterling Elite closes the experience gap between being promoted and being proven. Executive education and advisory — courses, certifications, assessments, coaching, and peer community for rising CFOs, COOs, and CEOs.">
+<meta name="description" content="Sterling Elite closes the experience gap between being promoted and being proven. Executive education and advisory — courses, certifications, assessments, and coaching for rising CFOs, COOs, and CEOs.">
 <meta property="og:title" content="Sterling Elite — Closing the Experience Gap.">
 <meta property="og:description" content="Executive Education & Advisory. We close the gap between being promoted and being proven for rising executives.">
 <meta property="og:type" content="website">
@@ -14,14 +14,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy:#0e2038; --midnight:#16294a; --gold:#c0972f; --champagne:#e3c272;
-    --bronze:#b3893c; --slate:#546072; --ivory:#f4f1ea; --white:#ffffff;
-    --charcoal:#2b303a; --platinum:#c8ccd4;
+    --navy:#0a1730; --midnight:#102747; --gold:#cfa42c; --champagne:#f0d27a;
+    --bronze:#9c6f1c; --slate:#3f4a5c; --ivory:#f4f1ea; --white:#ffffff;
+    --charcoal:#161b24; --platinum:#c8ccd4;
     --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',Helvetica,Arial,sans-serif;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:var(--sans);color:var(--charcoal);background:var(--white);line-height:1.65;font-weight:300;-webkit-font-smoothing:antialiased}
+  body{font-family:var(--sans);color:var(--charcoal);background:var(--white);line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased}
   h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacing:.2px}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
@@ -181,6 +181,36 @@
   ::selection{background:rgba(192,151,47,.28)}
   html{scroll-padding-top:90px}
   @media(max-width:560px){ .hero-stats{gap:28px} .wrap{padding:0 20px} section{padding:72px 0} }
+  /* --- luxe pass v2 --- */
+  body{font-weight:400}
+  h1,h2,h3,h4{font-weight:700}
+  .section-head h2,.cta h2{font-weight:700;letter-spacing:-.4px}
+  .hero p{color:#d8e3f3;font-weight:400}
+  .section-head p{color:#33404f}
+  .gap-grid p,.about-grid p{color:#202833}
+  .step p,.faq-a p{color:#33404f}
+  .lead-quote{color:#102747}
+  .navlinks a{color:#dde7f3;font-weight:500;position:relative}
+  .navlinks a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:1px;background:var(--gold);transition:width .25s ease}
+  .navlinks a:hover::after{width:100%}
+  .hero{background:radial-gradient(120% 95% at 72% 8%,#1a3358 0%,#0e2344 42%,#07142e 100%)}
+  .cta{background:radial-gradient(120% 100% at 30% 0%,#16304f,#07142e)}
+  .alt{background:#0a1730}
+  .gold{color:#cfa42c}
+  .hero-stats .n{text-shadow:0 2px 12px rgba(207,164,44,.28)}
+  /* reactive metallic buttons */
+  .btn{position:relative;overflow:hidden;font-weight:700;transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+  .btn-gold{background:linear-gradient(135deg,#f6dd8e 0%,#d8af3e 46%,#a9781f 100%);color:#0a1730;box-shadow:0 10px 26px rgba(180,140,50,.42),inset 0 1px 0 rgba(255,255,255,.55)}
+  .btn-gold:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 18px 46px rgba(207,164,44,.6),inset 0 1px 0 rgba(255,255,255,.7);filter:brightness(1.06)}
+  .btn-gold:active{transform:translateY(0) scale(.99)}
+  .btn-ghost{border-color:#cfa42c;color:#f0d27a}
+  .btn-ghost:hover{background:rgba(207,164,44,.14);box-shadow:0 0 0 1px #cfa42c,0 10px 28px rgba(207,164,44,.22)}
+  .btn::after{content:"";position:absolute;top:0;left:-150%;width:65%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-20deg);transition:left .6s ease;pointer-events:none}
+  .btn:hover::after{left:160%}
+  .card{transition:background .3s,transform .3s,box-shadow .3s}
+  .card:hover{transform:translateY(-3px)}
+  .cards{box-shadow:0 22px 54px rgba(10,23,48,.12)}
+  .step:hover{box-shadow:0 22px 50px rgba(10,23,48,.16)}
 </style>
 </head>
 <body>
@@ -262,7 +292,6 @@
         <a href="#serve">Who We Serve</a>
         <a href="#program">The Program</a>
         <a href="#method">The Method</a>
-        <a href="#fellowship">Fellowship</a>
         <a href="#about">About</a>
         <a class="btn btn-gold" href="#contact">Request Information</a>
       </div>
@@ -277,7 +306,7 @@
   <div class="wrap hero-content">
     <div class="eyebrow gold">Closing the Experience Gap</div>
     <h1>Become the executive your company <em>already believes you are.</em></h1>
-    <p>You were promoted because you're exceptional. But being promoted isn't the same as being proven. Through executive education and advisory — courses, coaching, assessments, operating systems, and an elite peer community — Sterling Elite closes the gap between the seat you've been given and the mastery it demands.</p>
+    <p>You were promoted because you're exceptional. But being promoted isn't the same as being proven. Through executive education and advisory — courses, coaching, assessments, and operating systems — Sterling Elite closes the gap between the seat you've been given and the mastery it demands.</p>
     <div class="hero-cta">
       <a class="btn btn-gold" href="#contact">Request Information</a>
       <a class="btn btn-ghost" href="#program">See How It Works</a>
@@ -305,7 +334,7 @@
       </div>
       <div>
         <h3 style="font-size:24px;color:var(--navy);margin-bottom:10px">Executive Advisory</h3>
-        <p>1:1 coaching, on-call strategic counsel, executive assessments, and an invitation-only peer community — applied to your real board, your real cadence, your real quarter.</p>
+        <p>1:1 coaching, on-call strategic counsel, and executive assessments — applied to your real board, your real cadence, your real quarter.</p>
       </div>
     </div>
   </div>
@@ -359,7 +388,7 @@
       <div class="step reveal"><div class="num">02</div><h3>1:1 Executive Coaching</h3><p>Regular sessions focused on your development plan and the live leadership challenges in front of you — applied to real situations, not hypotheticals.</p></div>
       <div class="step reveal"><div class="num">03</div><h3>Strategic Advisory</h3><p>On-call access to senior advisors for the high-stakes moments: a tense board meeting, a turnaround call, a make-or-break stakeholder conversation.</p></div>
       <div class="step reveal"><div class="num">04</div><h3>Capability Building &amp; The Sterling Library</h3><p>Targeted skill development from the Sterling Methodology — supported by a curated library of training videos, reading, and resources mapped to each competency pillar.</p></div>
-      <div class="step reveal"><div class="num">05</div><h3>The Sterling Fellowship</h3><p>An invitation-only network of peers operating at your altitude, plus the Ascent newsletter — candor, mentorship, and commingling, online and in person.</p></div>
+      <div class="step reveal"><div class="num">05</div><h3>Ongoing Access &amp; The Ascent Newsletter</h3><p>On-call access for real-time advice between sessions, plus the Ascent newsletter — practical insight for executives on the climb.</p></div>
       <div class="step reveal"><div class="num">06</div><h3>Progress Reviews &amp; Course Correction</h3><p>Structured calibration against your success criteria at 90 days, 6 months, and 12 months — with active adjustment as the role and the business evolve.</p></div>
     </div>
   </div>
@@ -377,17 +406,6 @@
       <div class="pillar"><div class="pn">02</div><h4>Operational Fluency</h4><p>Running the machine: priorities, systems, and execution at scale.</p></div>
       <div class="pillar"><div class="pn">03</div><h4>Board &amp; Stakeholder Leadership</h4><p>Managing up and out: the board, investors, and peers.</p></div>
       <div class="pillar"><div class="pn">04</div><h4>People &amp; Presence</h4><p>Leading leaders, executive communication, and the gravity to hold the room.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="fellowship">
-  <div class="wrap">
-    <div class="fellowship reveal">
-      <div class="eyebrow gold">The Sterling Fellowship</div>
-      <h2>The climb is lonely. It shouldn't be solitary.</h2>
-      <p>We surround you with executives who understand the altitude — a vetted circle for honest counsel, warm introductions, and the conversations you can only have with people who've sat in a chair like yours. Curated roundtables, private dinners, and an always-on digital community.</p>
-      <div style="margin-top:30px"><a class="btn btn-gold" href="#contact">Request an Invitation</a></div>
     </div>
   </div>
 </section>
@@ -488,7 +506,7 @@
         </div>
       </div>
       <div class="foot-links">
-        <a href="#gap">The Gap</a><a href="#program">The Program</a><a href="#method">The Method</a><a href="#fellowship">Fellowship</a><a href="#about">About</a><a href="#contact">Contact</a>
+        <a href="#gap">The Gap</a><a href="#program">The Program</a><a href="#method">The Method</a><a href="#about">About</a><a href="#contact">Contact</a>
       </div>
     </div>
     <div class="foot-bottom">
