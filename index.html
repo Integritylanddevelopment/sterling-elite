@@ -3,393 +3,284 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sterling Elite — Closing the Experience Gap · Executive Education & Advisory</title>
-<meta name="description" content="Sterling Elite closes the experience gap between being promoted and being proven. Executive education and advisory — courses, certifications, assessments, and coaching for rising CFOs, COOs, and CEOs.">
-<meta property="og:title" content="Sterling Elite — Closing the Experience Gap.">
-<meta property="og:description" content="Executive Education & Advisory. We close the gap between being promoted and being proven for rising executives.">
+<title>Sterling Elite — Lifelong Executive Development</title>
+<meta name="description" content="Sterling Elite is a private executive development and advisory practice that helps exceptional professionals become exceptional C-suite leaders — and keeps developing them across their careers.">
+<meta property="og:title" content="Sterling Elite — Lifelong Executive Development">
+<meta property="og:description" content="Executive development and advisory for rising C-suite leaders. Closing the experience gap between being promoted and being proven.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='16'%20fill='%230e2038'/%3E%3Ccircle%20cx='50'%20cy='50'%20r='40'%20fill='none'%20stroke='%23c0972f'%20stroke-width='3'/%3E%3Ctext%20x='50'%20y='66'%20text-anchor='middle'%20font-family='Georgia,serif'%20font-size='31'%20font-weight='600'%20fill='%23c0972f'%3ESEE%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="/favicon-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy:#0a1730; --midnight:#102747; --gold:#cfa42c; --champagne:#f0d27a;
-    --bronze:#9c6f1c; --slate:#3f4a5c; --ivory:#f4f1ea; --white:#ffffff;
-    --charcoal:#161b24; --platinum:#c8ccd4;
+    --navy:#0a1730; --midnight:#122a4d; --deepnavy:#051229;
+    --gold:#d4a041; --gold-light:#e8c46a; --gold-dark:#a9781f;
+    --cream:#f4efe2; --card:#fbf7ee; --line:#e6ddca;
+    --ink:#18202e; --slate:#41506a; --cream-navy:#efe7d6;
     --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',Helvetica,Arial,sans-serif;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:var(--sans);color:var(--charcoal);background:var(--white);line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased}
-  h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacing:.2px}
+  body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:700;line-height:1.12;letter-spacing:.2px}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
-  .eyebrow{font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--bronze)}
+  .eyebrow{font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-dark)}
   .gold{color:var(--gold)}
-  .rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);border:0;margin:0}
-  .btn{display:inline-block;font-family:var(--sans);font-weight:500;font-size:14px;letter-spacing:.06em;padding:15px 32px;border-radius:2px;transition:.25s;cursor:pointer;border:1px solid transparent}
-  .btn-gold{background:linear-gradient(135deg,var(--champagne),var(--bronze));color:var(--navy)}
-  .btn-gold:hover{filter:brightness(1.08);transform:translateY(-1px)}
-  .btn-ghost{border-color:rgba(192,151,47,.6);color:var(--gold)}
-  .btn-ghost:hover{background:rgba(192,151,47,.1)}
+  .btn{display:inline-block;font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:.06em;padding:15px 32px;border-radius:3px;transition:transform .2s,box-shadow .2s,filter .2s;cursor:pointer;border:1px solid transparent;position:relative;overflow:hidden}
+  .btn-gold{background:linear-gradient(135deg,var(--gold-light),var(--gold-dark));color:var(--deepnavy);box-shadow:0 10px 26px rgba(180,140,50,.4),inset 0 1px 0 rgba(255,255,255,.4)}
+  .btn-gold:hover{transform:translateY(-2px) scale(1.02);filter:brightness(1.05);box-shadow:0 16px 40px rgba(212,160,65,.55)}
+  .btn-ghost{border-color:var(--gold);color:var(--gold)}
+  .btn-ghost:hover{background:rgba(212,160,65,.14)}
+  .btn::after{content:"";position:absolute;top:0;left:-150%;width:60%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);transition:left .6s}
+  .btn:hover::after{left:160%}
 
-  /* NAV */
-  header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(14,32,56,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(192,151,47,.18);transition:.3s}
-  nav{display:flex;align-items:center;justify-content:space-between;height:74px}
-  .brand{display:flex;align-items:center;gap:12px;color:var(--white)}
-  .brand svg{width:38px;height:38px}
-  .brand-name{font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:1px;line-height:1}
-  .brand-name span{color:var(--gold)}
-  .brand-tag{font-size:8.5px;letter-spacing:.28em;color:#9fb0c8;text-transform:uppercase;margin-top:3px}
-  .navlinks{display:flex;gap:30px;align-items:center}
-  .navlinks a{font-size:13px;letter-spacing:.04em;color:#cfd8e6;transition:.2s}
-  .navlinks a:hover{color:var(--gold)}
-  .navlinks .btn{padding:11px 22px;font-size:13px}
-  .menu-toggle{display:none;background:none;border:0;color:var(--gold);font-size:26px;cursor:pointer}
+  /* HEADER */
+  header{position:fixed;top:0;left:0;right:0;z-index:120;background:rgba(5,18,41,.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(212,160,65,.22);box-shadow:0 6px 22px rgba(0,0,0,.28)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{height:46px;width:auto;display:block}
+  .brand-word{font-family:var(--serif);font-size:24px;font-weight:600;letter-spacing:3px;color:var(--cream-navy);line-height:1}
+  .brand-word b{color:var(--gold);font-weight:600}
+  .ham{width:46px;height:40px;background:none;border:0;cursor:pointer;display:flex;flex-direction:column;justify-content:center;gap:6px;padding:8px}
+  .ham span{display:block;height:2px;width:100%;background:var(--gold);transition:.3s;border-radius:2px}
+  body.menu-open .ham span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  body.menu-open .ham span:nth-child(2){opacity:0}
+  body.menu-open .ham span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
 
-  /* HERO */
-  .hero{position:relative;background:radial-gradient(120% 90% at 70% 10%,#1d3358 0%,var(--midnight) 40%,var(--navy) 100%);color:var(--white);padding:190px 0 130px;overflow:hidden}
-  .hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 85% 25%,rgba(192,151,47,.16),transparent 38%);pointer-events:none}
-  .hero-emblem{position:absolute;right:-60px;top:50%;transform:translateY(-50%);width:520px;opacity:.10;pointer-events:none}
-  .hero-content{position:relative;max-width:720px}
-  .hero h1{font-size:clamp(42px,6vw,76px);font-weight:600;margin:22px 0 24px;color:#fff}
-  .hero h1 em{font-style:italic;color:var(--champagne)}
-  .hero p{font-size:clamp(17px,2vw,20px);color:#c6d2e4;font-weight:300;max-width:600px;margin-bottom:38px}
-  .hero-cta{display:flex;gap:16px;flex-wrap:wrap}
-  .hero-stats{display:flex;gap:46px;margin-top:64px;flex-wrap:wrap}
-  .hero-stats .stat .n{font-family:var(--serif);font-size:34px;color:var(--gold);font-weight:600}
-  .hero-stats .stat .l{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#9fb0c8;margin-top:2px}
+  /* DRAWER */
+  .scrim{position:fixed;inset:0;background:rgba(3,10,24,.55);opacity:0;visibility:hidden;transition:.3s;z-index:130}
+  body.menu-open .scrim{opacity:1;visibility:visible}
+  .drawer{position:fixed;top:0;right:0;height:100vh;width:340px;max-width:86vw;background:linear-gradient(160deg,var(--midnight),var(--deepnavy));z-index:140;transform:translateX(100%);transition:transform .35s cubic-bezier(.2,.8,.2,1);box-shadow:-20px 0 50px rgba(0,0,0,.4);display:flex;flex-direction:column;padding:26px 0}
+  body.menu-open .drawer{transform:none}
+  .drawer .dhead{display:flex;justify-content:space-between;align-items:center;padding:0 28px 18px;border-bottom:1px solid rgba(212,160,65,.2);margin-bottom:12px}
+  .drawer .dhead span{font-family:var(--sans);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#9fb0c8}
+  .drawer .dclose{background:none;border:0;color:var(--gold);font-size:26px;cursor:pointer;line-height:1}
+  .drawer nav{flex-direction:column;height:auto;align-items:stretch;gap:0}
+  .drawer a{font-family:var(--serif);font-size:22px;color:var(--cream-navy);padding:13px 30px;transition:.2s;position:relative}
+  .drawer a::before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:3px;background:var(--gold);transform:scaleY(0);transition:.2s;transform-origin:center}
+  .drawer a:hover,.drawer a.current{color:var(--gold);background:rgba(212,160,65,.08)}
+  .drawer a:hover::before,.drawer a.current::before{transform:scaleY(1)}
+  .drawer .drawer-cta{margin:16px 28px 0;padding:14px;text-align:center;background:linear-gradient(135deg,var(--gold-light),var(--gold-dark));color:var(--deepnavy);border-radius:3px;font-family:var(--sans);font-size:14px;font-weight:700;letter-spacing:.06em}
+  .drawer .drawer-cta::before{display:none}
 
-  section{padding:96px 0}
-  .section-head{max-width:720px;margin-bottom:54px}
-  .section-head h2{font-size:clamp(30px,4vw,46px);margin:14px 0 18px;color:var(--navy)}
+  /* PAGE SYSTEM */
+  main{min-height:100vh;display:flex;flex-direction:column}
+  .page{display:none;flex:1}
+  .page.active{display:block;animation:fade .4s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  section.pad{padding:150px 0 96px}
+
+  /* HERO / HOME */
+  .hero{position:relative;background:radial-gradient(120% 95% at 72% 8%,#173257 0%,var(--midnight) 42%,var(--deepnavy) 100%);color:var(--cream-navy);padding:170px 0 120px;overflow:hidden;text-align:center}
+  .hero-mark{position:absolute;right:-30px;top:50%;transform:translateY(-50%);height:520px;opacity:.06;pointer-events:none}
+  .hero-content{position:relative;max-width:860px;margin:0 auto}
+  .hero h1{font-size:clamp(40px,6vw,74px);color:var(--cream);margin:22px auto 24px;text-wrap:balance}
+  .hero h1 em{font-style:italic;color:var(--gold-light)}
+  .hero p{font-size:clamp(17px,2vw,20px);color:#d6ddec;max-width:640px;margin:0 auto 38px;text-wrap:pretty}
+  .hero-cta{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+  .hero-stats{display:flex;justify-content:center;gap:clamp(28px,5vw,58px);margin-top:56px;padding-top:34px;border-top:1px solid rgba(212,160,65,.22);flex-wrap:wrap}
+  .hero-stats .n{font-family:var(--serif);font-size:32px;color:var(--gold);font-weight:700}
+  .hero-stats .l{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#9fb0c8;margin-top:2px}
+
+  .section-head{max-width:760px;margin:0 auto 48px;text-align:center}
+  .section-head h2{font-size:clamp(30px,4vw,46px);margin:14px 0 16px;color:var(--navy);letter-spacing:-.3px}
   .section-head p{font-size:18px;color:var(--slate)}
-  .lead-quote{font-family:var(--serif);font-style:italic;font-size:clamp(22px,3vw,30px);color:var(--midnight);line-height:1.4;border-left:3px solid var(--gold);padding-left:26px;margin-top:34px;max-width:760px}
+  .lead-quote{font-family:var(--serif);font-style:italic;font-size:clamp(22px,3vw,30px);color:var(--midnight);line-height:1.4;border-left:3px solid var(--gold);padding-left:26px;margin:30px auto 0;max-width:760px}
 
-  .alt{background:var(--navy);color:#e8edf5}
-  .alt .section-head h2{color:#fff}
-  .alt .section-head p{color:#aebbd0}
+  .navy-page{background:var(--navy);color:var(--cream-navy)}
+  .navy-page .section-head h2{color:var(--cream)}
+  .navy-page .section-head p{color:#b6c3d8}
 
-  /* GAP */
-  .gap-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-  .gap-grid p{font-size:17px;color:#3c4658;margin-bottom:18px}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;max-width:1000px;margin:0 auto}
+  .two-col p{font-size:17px;color:var(--ink);margin-bottom:16px}
+  .navy-page .two-col p{color:#cdd7e6}
+  .col-head{font-size:24px;color:var(--navy);margin-bottom:10px}
+  .navy-page .col-head{color:var(--cream)}
 
-  /* WHO WE SERVE */
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:rgba(192,151,47,.25);border:1px solid rgba(192,151,47,.25)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:rgba(212,160,65,.28);border:1px solid rgba(212,160,65,.28);max-width:1000px;margin:0 auto;box-shadow:0 22px 54px rgba(10,23,48,.14)}
   .card{background:var(--navy);padding:38px 32px;transition:.3s}
-  .card:hover{background:var(--midnight)}
-  .card h3{color:var(--champagne);font-size:25px;margin-bottom:12px}
-  .card p{font-size:15px;color:#b9c5d8;font-weight:300}
+  .card:hover{background:var(--midnight);transform:translateY(-2px)}
+  .card h3{color:var(--gold-light);font-size:25px;margin-bottom:12px}
+  .card p{font-size:15px;color:#c2ccdd}
 
-  /* PROGRAM */
-  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
-  .step{background:#fff;border:1px solid #e7e2d6;border-radius:4px;padding:34px 30px;position:relative;transition:.3s}
-  .step:hover{box-shadow:0 18px 40px rgba(14,32,56,.10);transform:translateY(-3px);border-color:rgba(192,151,47,.5)}
-  .step .num{font-family:var(--serif);font-size:15px;color:var(--gold);letter-spacing:.2em;font-weight:600}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:32px 30px;transition:.3s}
+  .step:hover{box-shadow:0 20px 46px rgba(10,23,48,.12);transform:translateY(-3px);border-color:rgba(212,160,65,.5)}
+  .step .num{font-family:var(--serif);font-size:15px;color:var(--gold-dark);letter-spacing:.2em;font-weight:700}
   .step h3{font-size:22px;color:var(--navy);margin:8px 0 12px}
   .step p{font-size:15px;color:var(--slate)}
 
-  /* METHOD pillars */
-  .pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px;margin-top:10px}
+  .pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px;max-width:1000px;margin:0 auto}
   .pillar{border-top:2px solid var(--gold);padding-top:22px}
-  .pillar h4{font-size:21px;color:#fff;margin-bottom:10px}
-  .pillar p{font-size:14.5px;color:#aebbd0}
-  .pillar .pn{font-family:var(--serif);font-size:40px;color:rgba(192,151,47,.35);line-height:1;font-weight:600}
+  .pillar h4{font-size:21px;color:var(--cream);margin-bottom:10px;font-family:var(--serif);font-weight:700}
+  .pillar p{font-size:14.5px;color:#b6c3d8}
+  .pillar .pn{font-family:var(--serif);font-size:40px;color:rgba(212,160,65,.4);line-height:1;font-weight:700}
 
-  /* FELLOWSHIP */
-  .fellowship{background:linear-gradient(135deg,var(--midnight),var(--navy));color:#fff;border-radius:6px;padding:64px 56px;position:relative;overflow:hidden}
-  .fellowship::before{content:"";position:absolute;right:-40px;bottom:-40px;width:280px;height:280px;background:radial-gradient(circle,rgba(192,151,47,.18),transparent 70%)}
-  .fellowship h2{font-size:clamp(28px,4vw,42px);color:#fff;margin:14px 0 18px;max-width:640px}
-  .fellowship p{color:#bdc9dc;font-size:18px;max-width:620px}
+  .side-card{background:var(--navy);color:var(--cream-navy);border-radius:8px;padding:40px;border:1px solid rgba(212,160,65,.3)}
+  .side-card .eyebrow{color:var(--gold-light)}
+  .side-card h3{color:var(--cream);font-size:26px;margin:10px 0 16px}
+  .side-card ul{list-style:none;margin-top:16px}
+  .side-card li{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:15px;color:#d3ddec;display:flex;gap:12px;align-items:flex-start}
+  .side-card li::before{content:"◆";color:var(--gold);font-size:9px;margin-top:6px}
 
-  /* ABOUT */
-  .about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:center}
-  .about-grid p{font-size:17px;color:#3c4658;margin-bottom:18px}
-  .about-card{background:var(--navy);color:#fff;border-radius:6px;padding:42px;border:1px solid rgba(192,151,47,.3)}
-  .about-card .eyebrow{color:var(--champagne)}
-  .about-card h3{color:#fff;font-size:26px;margin:10px 0 16px}
-  .about-card ul{list-style:none;margin-top:18px}
-  .about-card li{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:15px;color:#cdd7e6;display:flex;gap:12px;align-items:flex-start}
-  .about-card li::before{content:"▲";color:var(--gold);font-size:9px;margin-top:6px}
+  /* FOUNDER — bio body uses the founder heading font + color */
+  .founder-bio p{font-family:var(--serif);font-size:20px;line-height:1.5;color:var(--cream);margin-bottom:16px}
 
   /* FAQ */
-  .faq-item{border-bottom:1px solid #e2ddd0}
-  .faq-q{width:100%;text-align:left;background:none;border:0;padding:24px 0;font-family:var(--serif);font-size:21px;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px}
-  .faq-q .ic{color:var(--gold);font-size:24px;transition:.3s;flex-shrink:0}
+  .faq-box{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 34px;max-width:900px;margin:0 auto;box-shadow:0 14px 40px rgba(10,23,48,.07)}
+  .faq-item{border-bottom:1px solid var(--line)}
+  .faq-item:last-child{border-bottom:0}
+  .faq-q{width:100%;text-align:left;background:none;border:0;padding:22px 0;font-family:var(--serif);font-size:21px;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px}
+  .faq-q .ic{color:var(--gold-dark);font-size:24px;transition:.3s;flex-shrink:0}
   .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
-  .faq-a p{padding:0 0 24px;color:var(--slate);font-size:16px;max-width:780px}
+  .faq-a p{padding:0 0 22px;color:var(--slate);font-size:16px}
   .faq-item.open .ic{transform:rotate(45deg)}
 
-  /* CTA / FORM */
-  .cta{background:radial-gradient(120% 100% at 30% 0%,#1d3358,var(--navy));color:#fff}
-  .cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
-  .cta h2{font-size:clamp(30px,4vw,46px);color:#fff;margin:14px 0 18px}
-  .cta p{color:#bdc9dc;font-size:18px}
-  .contact-line{margin-top:30px;font-size:15px;color:#cdd7e6;line-height:2}
-  .contact-line a{color:var(--champagne)}
-  form{background:rgba(255,255,255,.04);border:1px solid rgba(192,151,47,.3);border-radius:6px;padding:36px}
-  .field{margin-bottom:18px}
+  /* CONTACT */
+  .contact-page{background:radial-gradient(120% 100% at 30% 0%,#173257,var(--deepnavy));color:var(--cream-navy)}
+  .cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;max-width:1000px;margin:0 auto}
+  .cta-grid h2{font-size:clamp(30px,4vw,44px);color:var(--cream);margin:14px 0 16px}
+  .cta-grid p{color:#c8d2e2;font-size:18px}
+  .contact-line{margin-top:28px;font-size:15px;color:#d3ddec;line-height:2}
+  .contact-line a{color:var(--gold-light)}
+  form{background:rgba(255,255,255,.04);border:1px solid rgba(212,160,65,.3);border-radius:8px;padding:34px}
+  .field{margin-bottom:16px}
   label{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#9fb0c8;margin-bottom:7px}
-  input,select,textarea{width:100%;background:rgba(14,32,56,.5);border:1px solid rgba(255,255,255,.15);border-radius:3px;padding:13px 14px;color:#fff;font-family:var(--sans);font-size:15px;transition:.2s}
-  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);background:rgba(14,32,56,.8)}
+  input,select,textarea{width:100%;background:rgba(5,18,41,.6);border:1px solid rgba(255,255,255,.16);border-radius:4px;padding:13px 14px;color:var(--cream);font-family:var(--sans);font-size:15px;transition:.2s}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);background:rgba(5,18,41,.85)}
   textarea{resize:vertical;min-height:90px}
-  form .btn{width:100%;margin-top:6px;border:0}
+  form .btn{width:100%;margin-top:6px}
   .form-note{font-size:12.5px;color:#8b9ab2;margin-top:14px;text-align:center}
-  .success{display:none;background:rgba(192,151,47,.12);border:1px solid var(--gold);border-radius:4px;padding:14px;color:var(--champagne);font-size:14px;text-align:center;margin-top:16px}
+  .success{display:none;background:rgba(212,160,65,.14);border:1px solid var(--gold);border-radius:5px;padding:14px;color:var(--gold-light);font-size:14px;text-align:center;margin-top:16px}
 
-  /* FOOTER */
-  footer{background:#081326;color:#8b9ab2;padding:54px 0 30px}
-  .foot-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.08)}
-  .foot-brand{display:flex;align-items:center;gap:12px;color:#fff}
-  .foot-brand svg{width:34px;height:34px}
-  .foot-brand .fn{font-family:var(--serif);font-size:19px;letter-spacing:1px}
-  .foot-brand .fn span{color:var(--gold)}
-  .foot-links{display:flex;gap:26px;flex-wrap:wrap}
-  .foot-links a{font-size:13px;color:#aebbd0}
-  .foot-links a:hover{color:var(--gold)}
-  .foot-bottom{padding-top:24px;font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  /* LEGAL PAGES */
+  .legal{max-width:820px;margin:0 auto}
+  .legal h2{color:var(--navy);font-size:clamp(28px,4vw,40px);margin-bottom:6px;text-align:center}
+  .legal .updated{text-align:center;color:var(--slate);font-size:13px;margin-bottom:34px}
+  .legal h3{color:var(--navy);font-size:20px;margin:26px 0 8px;font-family:var(--serif)}
+  .legal p{color:var(--slate);font-size:15.5px;margin-bottom:12px}
 
-  .reveal{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}
-  .reveal.in{opacity:1;transform:none}
+  /* FOOTER (every page) */
+  footer{background:var(--deepnavy);color:#9fb0c8;padding:52px 0 26px;border-top:1px solid rgba(212,160,65,.2)}
+  .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .foot-brand img{height:40px;margin-bottom:12px}
+  .foot-brand .fn{font-family:var(--serif);font-size:20px;letter-spacing:2px;color:var(--cream-navy)}
+  .foot-brand .fn b{color:var(--gold)}
+  .foot-brand p{font-size:12.5px;color:#7f8ea6;margin-top:8px;max-width:320px}
+  .foot-col h5{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  .foot-col a{display:block;font-size:13.5px;color:#aebbd0;padding:5px 0;transition:.2s;cursor:pointer}
+  .foot-col a:hover{color:var(--gold)}
+  .foot-bottom{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:#7f8ea6}
+  .foot-legal a{color:#9fb0c8;cursor:pointer}
+  .foot-legal a:hover{color:var(--gold)}
+  .foot-disclaimer{font-size:11.5px;color:#6b7a92;margin-top:14px;line-height:1.6;max-width:900px}
 
-  @media(max-width:860px){
-    .navlinks{position:fixed;top:74px;left:0;right:0;background:var(--navy);flex-direction:column;gap:0;padding:10px 0;border-bottom:1px solid rgba(192,151,47,.2);transform:translateY(-140%);transition:.35s;height:auto}
-    .navlinks.open{transform:none}
-    .navlinks a{padding:14px 28px;width:100%}
-    .menu-toggle{display:block}
-    .gap-grid,.about-grid,.cta-grid{grid-template-columns:1fr;gap:34px}
-    .hero{padding:150px 0 90px}
-    .hero-emblem{display:none}
-    .fellowship{padding:44px 30px}
+  @media(max-width:820px){
+    .brand-word{display:none}
+    .two-col,.cta-grid{grid-template-columns:1fr;gap:32px}
+    .foot-top{grid-template-columns:1fr;gap:26px}
+    section.pad{padding:120px 0 72px}
+    .hero{padding:140px 0 84px}
   }
-
-  /* --- polish pass --- */
-  header::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.6}
-  .brand svg{width:46px;height:46px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.25))}
-  .brand-name{font-size:23px}
-  *:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
-  .btn{box-shadow:0 6px 18px rgba(14,32,56,.10)}
-  .btn-gold{box-shadow:0 8px 22px rgba(179,137,60,.30)}
-  .hero h1{letter-spacing:-.5px}
-  .hero-emblem{width:560px;right:-90px;opacity:.09}
-  .hero-stats{padding-top:30px;border-top:1px solid rgba(192,151,47,.22)}
-  .lead-quote{position:relative}
-  .step:hover .num,.card:hover h3{color:var(--champagne)}
-  .pillar{transition:.3s}.pillar:hover{transform:translateY(-3px)}
-  .section-head h2{letter-spacing:-.3px}
-  ::selection{background:rgba(192,151,47,.28)}
-  html{scroll-padding-top:90px}
-  @media(max-width:560px){ .hero-stats{gap:28px} .wrap{padding:0 20px} section{padding:72px 0} }
-  /* --- luxe pass v2 --- */
-  body{font-weight:400}
-  h1,h2,h3,h4{font-weight:700}
-  .section-head h2,.cta h2{font-weight:700;letter-spacing:-.4px}
-  .hero p{color:#d8e3f3;font-weight:400}
-  .section-head p{color:#33404f}
-  .gap-grid p,.about-grid p{color:#202833}
-  .step p,.faq-a p{color:#33404f}
-  .lead-quote{color:#102747}
-  .navlinks a{color:#dde7f3;font-weight:500;position:relative}
-  .navlinks a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:1px;background:var(--gold);transition:width .25s ease}
-  .navlinks a:hover::after{width:100%}
-  .hero{background:radial-gradient(120% 95% at 72% 8%,#1a3358 0%,#0e2344 42%,#07142e 100%)}
-  .cta{background:radial-gradient(120% 100% at 30% 0%,#16304f,#07142e)}
-  .alt{background:#0a1730}
-  .gold{color:#cfa42c}
-  .hero-stats .n{text-shadow:0 2px 12px rgba(207,164,44,.28)}
-  /* reactive metallic buttons */
-  .btn{position:relative;overflow:hidden;font-weight:700;transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
-  .btn-gold{background:linear-gradient(135deg,#f6dd8e 0%,#d8af3e 46%,#a9781f 100%);color:#0a1730;box-shadow:0 10px 26px rgba(180,140,50,.42),inset 0 1px 0 rgba(255,255,255,.55)}
-  .btn-gold:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 18px 46px rgba(207,164,44,.6),inset 0 1px 0 rgba(255,255,255,.7);filter:brightness(1.06)}
-  .btn-gold:active{transform:translateY(0) scale(.99)}
-  .btn-ghost{border-color:#cfa42c;color:#f0d27a}
-  .btn-ghost:hover{background:rgba(207,164,44,.14);box-shadow:0 0 0 1px #cfa42c,0 10px 28px rgba(207,164,44,.22)}
-  .btn::after{content:"";position:absolute;top:0;left:-150%;width:65%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-20deg);transition:left .6s ease;pointer-events:none}
-  .btn:hover::after{left:160%}
-  .card{transition:background .3s,transform .3s,box-shadow .3s}
-  .card:hover{transform:translateY(-3px)}
-  .cards{box-shadow:0 22px 54px rgba(10,23,48,.12)}
-  .step:hover{box-shadow:0 22px 50px rgba(10,23,48,.16)}
-  /* --- cream canvas --- */
-  body{background:#f3ecdd}
-  .step{background:#faf6ec;border-color:#e8dfcc}
-  .cards{box-shadow:0 22px 54px rgba(10,23,48,.14)}
-  .hero h1{color:#f8f3e9}
-  .alt .section-head h2,.cta h2,.about-card h3{color:#f8f3e9}
-  /* --- polish v3: layout, balance, header --- */
-  header{background:rgba(9,20,42,.95);backdrop-filter:saturate(1.2) blur(12px);box-shadow:0 6px 24px rgba(0,0,0,.28)}
-  html{scroll-padding-top:100px}
-  .hero{padding-top:210px}
-  .hero-content{margin:0 auto;text-align:center;max-width:840px}
-  .hero .eyebrow{display:block}
-  .hero h1{text-wrap:balance;margin:22px auto 24px}
-  .hero p{margin-left:auto;margin-right:auto;text-wrap:pretty}
-  .hero-cta{justify-content:center}
-  .hero-stats{justify-content:center;gap:clamp(28px,5vw,60px);border-top:1px solid rgba(207,164,44,.22);padding-top:34px;margin-top:56px}
-  .hero-emblem{opacity:.06;right:-40px}
-  .section-head{margin-left:auto;margin-right:auto;text-align:center}
-  .section-head p{margin-left:auto;margin-right:auto}
-  .lead-quote{margin-left:auto;margin-right:auto;text-align:left}
-  .cta-grid,.about-grid,.gap-grid{align-items:start}
-  @media(max-width:640px){ .hero{padding-top:150px} .hero-stats{gap:24px} }
 </style>
 </head>
 <body>
 
-<!-- logo symbols -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3c272"/><stop offset="1" stop-color="#b3893c"/></linearGradient></defs><symbol id="mono" viewBox="0 0 200 200"><circle cx="100" cy="100" r="94" fill="#0e2038"/><circle cx="100" cy="100" r="94" fill="none" stroke="url(#gold)" stroke-width="3"/><circle cx="100" cy="100" r="84" fill="none" stroke="url(#gold)" stroke-width="1" opacity="0.7"/><text x="100" y="134" text-anchor="middle" font-family="Georgia,serif" font-size="72" font-weight="600" fill="url(#gold)" letter-spacing="1">SEE</text></symbol><symbol id="badge" viewBox="0 0 380 380"><g transform="translate(190 190) scale(1.0)">
-<circle r="172" fill="#0e2038"/>
-<circle r="172" fill="none" stroke="url(#gold)" stroke-width="4"/>
-<circle r="120" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.85"/>
-<text x="-146.13" y="-33.87" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(-76.95 -146.13 -33.87)">S</text>
-<text x="-142.04" y="-48.22" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(-71.25 -142.04 -48.22)">T</text>
-<text x="-136.55" y="-62.08" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(-65.55 -136.55 -62.08)">E</text>
-<text x="-129.71" y="-75.34" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(-59.85 -129.71 -75.34)">R</text>
-<text x="-121.58" y="-87.85" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(-54.15 -121.58 -87.85)">L</text>
-<text x="-112.26" y="-99.49" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(-48.45 -112.26 -99.49)">I</text>
-<text x="-101.82" y="-110.15" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(-42.75 -101.82 -110.15)">N</text>
-<text x="-90.38" y="-119.72" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(-37.05 -90.38 -119.72)">G</text>
-<text x="-78.04" y="-128.10" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(-31.35 -78.04 -128.10)"> </text>
-<text x="-64.93" y="-135.22" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(-25.65 -64.93 -135.22)">◆</text>
-<text x="-51.18" y="-141.00" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(-19.95 -51.18 -141.00)"> </text>
-<text x="-36.92" y="-145.38" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(-14.25 -36.92 -145.38)">E</text>
-<text x="-22.30" y="-148.33" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(-8.55 -22.30 -148.33)">L</text>
-<text x="-7.46" y="-149.81" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(-2.85 -7.46 -149.81)">I</text>
-<text x="7.46" y="-149.81" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(2.85 7.46 -149.81)">T</text>
-<text x="22.30" y="-148.33" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(8.55 22.30 -148.33)">E</text>
-<text x="36.92" y="-145.38" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(14.25 36.92 -145.38)"> </text>
-<text x="51.18" y="-141.00" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(19.95 51.18 -141.00)">◆</text>
-<text x="64.93" y="-135.22" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(25.65 64.93 -135.22)"> </text>
-<text x="78.04" y="-128.10" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(31.35 78.04 -128.10)">E</text>
-<text x="90.38" y="-119.72" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(37.05 90.38 -119.72)">X</text>
-<text x="101.82" y="-110.15" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(42.75 101.82 -110.15)">E</text>
-<text x="112.26" y="-99.49" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(48.45 112.26 -99.49)">C</text>
-<text x="121.58" y="-87.85" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(54.15 121.58 -87.85)">U</text>
-<text x="129.71" y="-75.34" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(59.85 129.71 -75.34)">T</text>
-<text x="136.55" y="-62.08" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(65.55 136.55 -62.08)">I</text>
-<text x="142.04" y="-48.22" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(71.25 142.04 -48.22)">V</text>
-<text x="146.13" y="-33.87" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="600" letter-spacing="0.5" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(76.95 146.13 -33.87)">E</text>
-<text x="-142.66" y="46.35" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(432.00 -142.66 46.35)">E</text>
-<text x="-135.72" y="63.87" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(424.80 -135.72 63.87)">X</text>
-<text x="-126.65" y="80.37" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(417.60 -126.65 80.37)">E</text>
-<text x="-115.58" y="95.61" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(410.40 -115.58 95.61)">C</text>
-<text x="-102.68" y="109.35" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(403.20 -102.68 109.35)">U</text>
-<text x="-88.17" y="121.35" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(396.00 -88.17 121.35)">T</text>
-<text x="-72.26" y="131.45" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(388.80 -72.26 131.45)">I</text>
-<text x="-55.22" y="139.47" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(381.60 -55.22 139.47)">V</text>
-<text x="-37.30" y="145.29" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(374.40 -37.30 145.29)">E</text>
-<text x="-18.80" y="148.82" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(367.20 -18.80 148.82)"> </text>
-<text x="0.00" y="150.00" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(360.00 0.00 150.00)">F</text>
-<text x="18.80" y="148.82" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(352.80 18.80 148.82)">U</text>
-<text x="37.30" y="145.29" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(345.60 37.30 145.29)">L</text>
-<text x="55.22" y="139.47" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(338.40 55.22 139.47)">F</text>
-<text x="72.26" y="131.45" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(331.20 72.26 131.45)">I</text>
-<text x="88.17" y="121.35" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(324.00 88.17 121.35)">L</text>
-<text x="102.68" y="109.35" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(316.80 102.68 109.35)">L</text>
-<text x="115.58" y="95.61" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(309.60 115.58 95.61)">M</text>
-<text x="126.65" y="80.37" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(302.40 126.65 80.37)">E</text>
-<text x="135.72" y="63.87" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(295.20 135.72 63.87)">N</text>
-<text x="142.66" y="46.35" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="500" letter-spacing="1" fill="#d8b860" text-anchor="middle" dominant-baseline="central" transform="rotate(288.00 142.66 46.35)">T</text>
-<path d="M -146 -5 L -141 0 L -146 5 L -151 0 Z" fill="#d8b860"/>
-<path d="M 146 -5 L 151 0 L 146 5 L 141 0 Z" fill="#d8b860"/>
-<text x="0" y="18" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="92" font-weight="600" fill="url(#gold)" letter-spacing="1">SEE</text>
-<line x1="-56" y1="50" x2="56" y2="50" stroke="url(#gold)" stroke-width="1.4"/>
-</g></symbol></svg>
-
-<header id="hdr">
+<header>
   <div class="wrap">
     <nav>
-      <a class="brand" href="#top">
-        <svg><use href="#mono"/></svg>
-        <div>
-          <div class="brand-name">Sterling <span>Elite</span></div>
-          <div class="brand-tag">Lifelong Executive Development</div>
-        </div>
+      <a class="brand" href="#home" data-page="home">
+        <img src="/logo-mark.png" alt="Sterling Elite">
+        <span class="brand-word">STERLING <b>ELITE</b></span>
       </a>
-      <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('nl').classList.toggle('open')">☰</button>
-      <div class="navlinks" id="nl">
-        <a href="#disciplines">Disciplines</a>
-        <a href="#platform">Platform</a>
-        <a href="#gap">The Gap</a>
-        <a href="#serve">Who We Serve</a>
-        <a href="#program">The Program</a>
-        <a href="#method">The Method</a>
-        <a href="#about">About</a>
-        <a href="#founder">Founder</a>
-        <a class="btn btn-gold" href="#contact">Request Information</a>
-      </div>
+      <button class="ham" aria-label="Open menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
     </nav>
   </div>
 </header>
 
-<main id="top">
+<div class="scrim" onclick="toggleMenu()"></div>
+<aside class="drawer" id="drawer">
+  <div class="dhead"><span>Menu</span><button class="dclose" aria-label="Close" onclick="toggleMenu()">&times;</button></div>
+  <nav>
+    <a data-page="home">Home</a>
+    <a data-page="disciplines">The Disciplines</a>
+    <a data-page="platform">The Platform</a>
+    <a data-page="gap">The Gap</a>
+    <a data-page="serve">Who We Serve</a>
+    <a data-page="program">The Program</a>
+    <a data-page="method">The Method</a>
+    <a data-page="about">About</a>
+    <a data-page="founder">Founder</a>
+    <a data-page="faq">FAQ</a>
+    <a class="drawer-cta" data-page="contact">Request Information</a>
+  </nav>
+</aside>
 
-<section class="hero">
-  <svg class="hero-emblem"><use href="#badge"/></svg>
-  <div class="wrap hero-content">
-    <div class="eyebrow gold">Closing the Experience Gap</div>
-    <h1>Become the executive your company <em>already believes you are.</em></h1>
-    <p>You were promoted because you're exceptional. But being promoted isn't the same as being proven. Sterling Elite is a lifelong executive development platform — education and advisory that close the gap between the seat you've been given and the mastery it demands, then keep growing alongside your career.</p>
-    <div class="hero-cta">
-      <a class="btn btn-gold" href="#contact">Request Information</a>
-      <a class="btn btn-ghost" href="#program">See How It Works</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat"><div class="n">4</div><div class="l">Competency Pillars</div></div>
-      <div class="stat"><div class="n">90-Day</div><div class="l">Development Plan</div></div>
-      <div class="stat"><div class="n">1:1</div><div class="l">Senior Advisory</div></div>
-      <div class="stat"><div class="n">CFO · COO · CEO</div><div class="l">The Seats We Serve</div></div>
-    </div>
-  </div>
-</section>
+<main>
 
-<section id="disciplines" style="border-top:1px solid var(--platinum);border-bottom:1px solid var(--platinum)">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Two Disciplines, One Standard</div>
+<!-- HOME -->
+<div class="page" id="page-home">
+  <section class="hero">
+    <img class="hero-mark" src="/logo-mark.png" alt="">
+    <div class="wrap hero-content">
+      <div class="eyebrow" style="color:var(--gold-light)">Closing the Experience Gap</div>
+      <h1>Become the executive your company <em>already believes you are.</em></h1>
+      <p>You were promoted because you're exceptional. But being promoted isn't the same as being proven. Sterling Elite is a lifelong executive development platform — education and advisory that close the gap between the seat you've been given and the mastery it demands, then keep growing alongside your career.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" data-page="contact">Request Information</a>
+        <a class="btn btn-ghost" data-page="program">See How It Works</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="n">4</div><div class="l">Competency Pillars</div></div>
+        <div class="stat"><div class="n">90-Day</div><div class="l">Development Plan</div></div>
+        <div class="stat"><div class="n">1:1</div><div class="l">Senior Advisory</div></div>
+        <div class="stat"><div class="n">C-Suite</div><div class="l">The Seats We Serve</div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- DISCIPLINES -->
+<div class="page" id="page-disciplines">
+  <section class="pad"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Two Disciplines, One Standard</div>
       <h2>Education that teaches the craft. Advisory that proves it.</h2>
-      <p>Knowledge alone doesn't close the gap — applied, coached, and pressure-tested knowledge does.</p>
+      <p>Knowledge alone doesn't close the gap — applied, coached, and pressure-tested knowledge does.</p></div>
+    <div class="two-col">
+      <div><h3 class="col-head">Executive Education <span style="font-size:13px;color:var(--slate);font-weight:400">· Phase One</span></h3>
+        <p>Self-paced modules, live workshops, certifications, and a working library of financial models, board decks, and operating playbooks — the technical craft of the C-suite. Foundational knowledge, not the finish line.</p></div>
+      <div><h3 class="col-head">Executive Advisory</h3>
+        <p>1:1 coaching, on-call strategic counsel, and executive assessments — applied to your real board, your real cadence, your real quarter.</p></div>
     </div>
-    <div class="gap-grid reveal">
-      <div>
-        <h3 style="font-size:24px;color:var(--navy);margin-bottom:10px">Executive Education <span style="font-size:13px;color:var(--slate);font-weight:400">· Phase One</span></h3>
-        <p>Self-paced courses, live workshops, certifications, and a working library of financial models, board decks, and operating playbooks — the technical craft of the CEO, CFO, and COO seats. Foundational knowledge, not the finish line.</p>
-      </div>
-      <div>
-        <h3 style="font-size:24px;color:var(--navy);margin-bottom:10px">Executive Advisory</h3>
-        <p>1:1 coaching, on-call strategic counsel, and executive assessments — applied to your real board, your real cadence, your real quarter.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </div></section>
+</div>
 
-<section id="platform" class="alt">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Beyond the Curriculum</div>
+<!-- PLATFORM -->
+<div class="page" id="page-platform">
+  <section class="pad navy-page"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Beyond the Curriculum</div>
       <h2>Not a course. A career-long platform.</h2>
-      <p>The curriculum is only the beginning. The real product is the executive you become — and the platform grows more valuable the longer you use it.</p>
-    </div>
-    <div class="pillars reveal">
+      <p>The curriculum is only the beginning. The real product is the executive you become — and the platform grows more valuable the longer you use it.</p></div>
+    <div class="pillars">
       <div class="pillar"><div class="pn">01</div><h4>Your Executive Profile</h4><p>A living model of your role, board, goals, and style that evolves across your career and never resets.</p></div>
       <div class="pillar"><div class="pn">02</div><h4>Memory of Your Journey</h4><p>Every assignment, simulation, and hard decision remembered — your coaching references what you've already lived through.</p></div>
       <div class="pillar"><div class="pn">03</div><h4>Adaptive &amp; Simulation-First</h4><p>Learning that personalizes as you grow, with realistic role-play that builds judgment and challenges your thinking.</p></div>
       <div class="pillar"><div class="pn">04</div><h4>No Graduation</h4><p>Continuous development before promotions, through acquisitions and crises — across your whole career.</p></div>
     </div>
-  </div>
-</section>
+  </div></section>
+</div>
 
-<section id="gap">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">The Insight</div>
+<!-- GAP -->
+<div class="page" id="page-gap">
+  <section class="pad"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">The Insight</div>
       <h2>The leap is real. The gap is predictable.</h2>
-      <p>The people most likely to struggle in the C-suite are often the ones who earned it fastest.</p>
-    </div>
-    <div class="gap-grid reveal">
+      <p>The people most likely to struggle in the C-suite are often the ones who earned it fastest.</p></div>
+    <div class="two-col">
       <div>
-        <p>A brilliant controller becomes CFO. A relentless operator becomes COO. A trusted lieutenant becomes CEO. Each was elevated on the strength of mastering the level below — and each now sits in a seat where the old playbook only takes them part of the way.</p>
+        <p>A brilliant controller steps up to the financial helm. A relentless operator takes the whole machine. A trusted lieutenant takes the top seat. Each was elevated on the strength of mastering the level below — and each now sits where the old playbook only takes them part of the way.</p>
         <p>That gap is not a weakness. It is the well-understood <span class="gold">cost of ambition</span>.</p>
       </div>
       <div>
@@ -397,70 +288,68 @@
         <div class="lead-quote">"You don't just hire an executive — you gain access to the system that built them, and the team that keeps building them."</div>
       </div>
     </div>
-  </div>
-</section>
+  </div></section>
+</div>
 
-<section id="serve" class="alt">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Who We Serve</div>
+<!-- SERVE -->
+<div class="page" id="page-serve">
+  <section class="pad navy-page"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Who We Serve</div>
       <h2>Built for the top of the house.</h2>
-      <p>Specific seats. Specific gaps. A development plan calibrated to each.</p>
-    </div>
-    <div class="cards reveal">
-      <div class="card"><h3>The CFO</h3><p>You owned the numbers as a controller. Now you own the narrative — to the board, the bank, and the market. We translate financial command into executive presence.</p></div>
-      <div class="card"><h3>The COO</h3><p>You know the work cold. Now you lead the leaders and set enterprise-wide priorities. We sharpen the judgment and cross-functional command the whole machine requires.</p></div>
-      <div class="card"><h3>The CEO</h3><p>You carry the strategy and the culture. Now you carry the board, the investors, and the final call. We prepare you for the altitude — and the loneliness — of the top seat.</p></div>
+      <p>Specific seats. Specific gaps. A development plan calibrated to each.</p></div>
+    <div class="cards">
+      <div class="card"><h3>The Finance Seat</h3><p>You owned the numbers below. Now you own the narrative — to the board, the bank, and the market. We translate financial command into executive presence.</p></div>
+      <div class="card"><h3>The Operations Seat</h3><p>You know the work cold. Now you lead the leaders and set enterprise-wide priorities. We sharpen the judgment and cross-functional command the whole machine requires.</p></div>
+      <div class="card"><h3>The Enterprise Seat</h3><p>You carry the strategy and the culture. Now you carry the board, the investors, and the final call. We prepare you for the altitude — and the loneliness — of the top seat.</p></div>
       <div class="card"><h3>Sponsoring Boards</h3><p>You've placed a high-potential leader. We protect and accelerate that investment with an expert outside read and a partner accountable to the outcome.</p></div>
     </div>
-  </div>
-</section>
+  </div></section>
+</div>
 
-<section id="program">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">The Program</div>
+<!-- PROGRAM -->
+<div class="page" id="page-program">
+  <section class="pad"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">The Program</div>
       <h2>A partnership that compounds.</h2>
-      <p>Not a course you finish and forget — a continuous relationship that grows more valuable the longer it runs.</p>
-    </div>
+      <p>Not a course you finish and forget — a continuous relationship that grows more valuable the longer it runs.</p></div>
     <div class="steps">
-      <div class="step reveal"><div class="num">01</div><h3>Initial Executive Assessment</h3><p>We map your environment, mandate, and readiness through structured interviews and proprietary role-fit instruments — delivering a confidential written assessment and a prioritized 90-day development plan.</p></div>
-      <div class="step reveal"><div class="num">02</div><h3>1:1 Executive Coaching</h3><p>Regular sessions focused on your development plan and the live leadership challenges in front of you — applied to real situations, not hypotheticals.</p></div>
-      <div class="step reveal"><div class="num">03</div><h3>Strategic Advisory</h3><p>On-call access to senior advisors for the high-stakes moments: a tense board meeting, a turnaround call, a make-or-break stakeholder conversation.</p></div>
-      <div class="step reveal"><div class="num">04</div><h3>Capability Building &amp; The Sterling Library</h3><p>Targeted skill development from the Sterling Methodology — supported by a curated library of training videos, reading, and resources mapped to each competency pillar.</p></div>
-      <div class="step reveal"><div class="num">05</div><h3>Ongoing Access &amp; The Ascent Newsletter</h3><p>On-call access for real-time advice between sessions, plus the Ascent newsletter — practical insight for executives on the climb.</p></div>
-      <div class="step reveal"><div class="num">06</div><h3>Progress Reviews &amp; Course Correction</h3><p>Structured calibration against your success criteria at 90 days, 6 months, and 12 months — with active adjustment as the role and the business evolve.</p></div>
+      <div class="step"><div class="num">01</div><h3>Initial Executive Assessment</h3><p>We map your environment, mandate, and readiness through structured interviews and proprietary role-fit instruments — delivering a confidential written assessment and a prioritized 90-day development plan.</p></div>
+      <div class="step"><div class="num">02</div><h3>1:1 Executive Coaching</h3><p>Regular sessions focused on your development plan and the live leadership challenges in front of you — applied to real situations, not hypotheticals.</p></div>
+      <div class="step"><div class="num">03</div><h3>Strategic Advisory</h3><p>On-call access to senior advisors for the high-stakes moments: a tense board meeting, a turnaround call, a make-or-break stakeholder conversation.</p></div>
+      <div class="step"><div class="num">04</div><h3>Capability Building &amp; The Sterling Library</h3><p>Targeted skill development from the Sterling Methodology — supported by a curated library of training modules, reading, and resources mapped to each competency pillar.</p></div>
+      <div class="step"><div class="num">05</div><h3>Ongoing Access &amp; The Ascent Newsletter</h3><p>On-call access for real-time advice between sessions, plus the Ascent newsletter — practical insight for executives on the climb.</p></div>
+      <div class="step"><div class="num">06</div><h3>Progress Reviews &amp; Course Correction</h3><p>Structured calibration against your success criteria at 90 days, 6 months, and 12 months — with active adjustment as the role and the business evolve.</p></div>
     </div>
-  </div>
-</section>
+  </div></section>
+</div>
 
-<section id="method" class="alt">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">The Sterling Method</div>
+<!-- METHOD -->
+<div class="page" id="page-method">
+  <section class="pad navy-page"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">The Sterling Method</div>
       <h2>The C-Suite Competency Template</h2>
-      <p>Every engagement benchmarks you against the seat across four pillars — so development is precise, not generic.</p>
-    </div>
-    <div class="pillars reveal">
+      <p>Every engagement benchmarks you against the seat across four pillars — so development is precise, not generic.</p></div>
+    <div class="pillars">
       <div class="pillar"><div class="pn">01</div><h4>Financial Command</h4><p>Fluency with the financials, capital, and the story the numbers tell.</p></div>
       <div class="pillar"><div class="pn">02</div><h4>Operational Fluency</h4><p>Running the machine: priorities, systems, and execution at scale.</p></div>
       <div class="pillar"><div class="pn">03</div><h4>Board &amp; Stakeholder Leadership</h4><p>Managing up and out: the board, investors, and peers.</p></div>
       <div class="pillar"><div class="pn">04</div><h4>People &amp; Presence</h4><p>Leading leaders, executive communication, and the gravity to hold the room.</p></div>
     </div>
-  </div>
-</section>
+  </div></section>
+</div>
 
-<section id="about" class="">
-  <div class="wrap">
-    <div class="about-grid">
-      <div class="reveal">
+<!-- ABOUT -->
+<div class="page" id="page-about">
+  <section class="pad"><div class="wrap">
+    <div class="two-col" style="align-items:center">
+      <div>
         <div class="eyebrow">About Sterling Elite</div>
         <h2 style="font-size:clamp(30px,4vw,46px);color:var(--navy);margin:14px 0 22px">Founded to close the gap.</h2>
-        <p>Sterling Elite is a private executive advisory and development practice dedicated to helping exceptional professionals become exceptional executives. We work with a select number of CEOs, CFOs, COOs, founders, and rising C-suite leaders — never generic leadership training, always a trusted advisor at your side.</p>
-        <p>Through personalized one-on-one coaching, strategic guidance, executive mentoring, and practical education tailored to your strengths and growth areas, we help you navigate complex financial, operational, strategic, and leadership challenges with confidence.</p>
-        <p>Our mission is to shorten the learning curve of executive leadership — providing the experience, insight, and practical tools that promotions alone cannot deliver, so you perform at the highest level with greater confidence, competence, and long-term success.</p>
+        <p>Sterling Elite is a private executive development and advisory practice that helps exceptional professionals become exceptional executives. We work with a deliberately small number of C-suite leaders and founders — never generic leadership training, always a trusted advisor at your side.</p>
+        <p>Through one-on-one coaching, strategic counsel, and practical education mapped to your strengths and gaps, we help you carry the financial, operational, and stakeholder demands of the seat with command.</p>
+        <p>Our mission is to shorten the executive learning curve — delivering the experience, judgment, and tools that a promotion alone cannot, so you perform at full effectiveness sooner and sustain it over a career.</p>
       </div>
-      <div class="about-card reveal">
+      <div class="side-card">
         <div class="eyebrow">What we provide</div>
         <h3>A trusted advisor, on call.</h3>
         <ul>
@@ -474,26 +363,23 @@
         </ul>
       </div>
     </div>
-  </div>
-</section>
+  </div></section>
+</div>
 
-<section id="founder" class="alt">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">The Founder</div>
-      <h2>Stephen &ldquo;Alex&rdquo; Alexander</h2>
-    </div>
-    <div class="about-grid">
-      <div class="reveal">
-        <p>Stephen &ldquo;Alex&rdquo; Alexander built his career the way the most capable executives actually develop: in the seat, under real consequences, learning the craft directly from people who had already mastered it.</p>
-        <p>Across his career, Alex has founded and operated companies spanning real estate and land development, financial and accounting operations, artificial intelligence and software infrastructure, and hospitality. He has structured and financed land deals, built the back-office systems that keep companies solvent and compliant, designed and deployed AI platforms now running in production, and carried the daily realities of running businesses where the margin for error is thin. The through-line is range &mdash; the ability to move between the balance sheet, the operating floor, and the technology stack without losing the plot.</p>
-        <p>That range did not come from a lecture hall. Alex pursued a deliberately unconventional education: intensive, one-on-one mentorship with accomplished operators, sought out and paid for over many years and pursued with the rigor and expense of a top graduate program. The result was the equivalent of an Ivy League education, assembled one mentor at a time &mdash; knowledge transferred directly from people who had already done the work, pressure-tested against real decisions rather than classroom case studies.</p>
-        <p>That experience is the origin of Sterling Elite.</p>
-        <p>Alex founded the firm to close what he calls the experience gap &mdash; the distance between being promoted and being proven. He had lived it. Every step up demanded a skill set the previous level never taught, and the fastest way across the gap was always direct access to someone who had already crossed it. Sterling Elite exists to give rising CEOs, CFOs, and COOs that same advantage at scale: executive education paired with hands-on advisory, so leaders learn the craft and then apply it to their own board, their own quarter, their own acquisition.</p>
-        <p>His approach reflects the way he learned &mdash; practical over inspirational, specific over abstract. Executives, he argues, do not need another motivational quote over a mountain photo. They need someone who can walk them through a covenant calculation, sharpen a board presentation, repair an operating cadence, and help them survive their first acquisition before the expensive mistakes happen. Education builds the knowledge; advisory makes it stick.</p>
-        <p>Alex leads Sterling Elite from Dallas, Texas, where the firm equips the next generation of C-suite leaders to lead at the highest level &mdash; and to do it before the cost of learning the hard way comes due.</p>
+<!-- FOUNDER -->
+<div class="page" id="page-founder">
+  <section class="pad navy-page"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">The Founder</div><h2>Alex Alexander</h2></div>
+    <div class="two-col">
+      <div class="founder-bio">
+        <p>Alex Alexander built his career the way the most capable executives actually develop: in the seat, under real consequences, learning the craft directly from people who had already mastered it.</p>
+        <p>Across his career, Alex has founded and operated companies spanning real estate and land development, financial and accounting operations, artificial intelligence and software infrastructure, and hospitality. He has structured and financed land deals, built the back-office systems that keep companies solvent and compliant, designed and deployed AI platforms now running in production, and carried the daily realities of running businesses where the margin for error is thin. The through-line is range — the ability to move between the balance sheet, the operating floor, and the technology stack without losing the plot.</p>
+        <p>That range did not come from a lecture hall. Alex pursued a deliberately unconventional education: intensive, one-on-one mentorship with accomplished operators, sought out and paid for over many years and pursued with the rigor and expense of a top graduate program. The result was the equivalent of an Ivy League education, assembled one mentor at a time — knowledge transferred directly from people who had already done the work, pressure-tested against real decisions rather than classroom case studies.</p>
+        <p>That experience is the origin of Sterling Elite. Alex founded the firm to close what he calls the experience gap — the distance between being promoted and being proven. He had lived it. Every step up demanded a skill set the previous level never taught, and the fastest way across the gap was always direct access to someone who had already crossed it. Sterling Elite exists to give rising C-suite leaders that same advantage at scale: executive education paired with hands-on advisory, so leaders learn the craft and then apply it to their own board, their own quarter, their own acquisition.</p>
+        <p>His approach reflects the way he learned — practical over inspirational, specific over abstract. Executives, he argues, do not need another motivational quote. They need someone who can walk them through a covenant calculation, sharpen a board presentation, repair an operating cadence, and help them navigate a first acquisition before the expensive mistakes happen. Education builds the knowledge; advisory makes it hold.</p>
+        <p>Alex leads Sterling Elite from Dallas, Texas, where the firm equips the next generation of C-suite leaders to lead at the highest level — and to do it before the cost of learning the hard way comes due.</p>
       </div>
-      <div class="about-card reveal">
+      <div class="side-card">
         <div class="eyebrow">Range</div>
         <h3>Built in the seat, not the lecture hall.</h3>
         <ul>
@@ -501,54 +387,53 @@
           <li>Financial &amp; accounting operations</li>
           <li>Artificial intelligence &amp; software</li>
           <li>Hospitality</li>
-          <li>Ivy League&ndash;equivalent education, assembled one mentor at a time</li>
+          <li>Ivy League–equivalent education, one mentor at a time</li>
           <li>Leads Sterling Elite from Dallas, Texas</li>
         </ul>
       </div>
     </div>
-  </div>
-</section>
+  </div></section>
+</div>
 
-<section id="faq" class="">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Questions</div>
-      <h2>What leaders ask us first.</h2>
-    </div>
-    <div class="reveal" style="background:#faf6ec;border-radius:6px;padding:8px 34px;box-shadow:0 14px 40px rgba(10,23,48,.07)">
-      <div class="faq-item"><button class="faq-q">Do you place executives or develop them?<span class="ic">+</span></button><div class="faq-a"><p>Both happen in our world, but Sterling Elite's focus is development — making sure the leader in the seat reaches full effectiveness, fast.</p></div></div>
+<!-- FAQ -->
+<div class="page" id="page-faq">
+  <section class="pad"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Questions</div><h2>What leaders ask us first.</h2></div>
+    <div class="faq-box">
+      <div class="faq-item"><button class="faq-q">Do you place executives or develop them?<span class="ic">+</span></button><div class="faq-a"><p>We develop them. Sterling Elite's focus is making sure the leader already in the seat reaches full effectiveness — quickly, and for the long run.</p></div></div>
       <div class="faq-item"><button class="faq-q">Who pays — the executive or the company?<span class="ic">+</span></button><div class="faq-a"><p>Typically the sponsoring company, as a protection of its investment in the leader. We also work directly with individual executives investing in their own ascent.</p></div></div>
       <div class="faq-item"><button class="faq-q">How long is an engagement?<span class="ic">+</span></button><div class="faq-a"><p>Engagements typically run an initial twelve months — a short assessment phase followed by continuous development — and renew by agreement.</p></div></div>
       <div class="faq-item"><button class="faq-q">Is it confidential?<span class="ic">+</span></button><div class="faq-a"><p>Absolutely. Discretion is a core value. One-on-one coaching dialogue stays confidential; the company receives the agreed assessment findings and progress.</p></div></div>
       <div class="faq-item"><button class="faq-q">What does it cost?<span class="ic">+</span></button><div class="faq-a"><p>Engagements are scoped to the executive and the seat. Request information and we'll prepare a tailored proposal.</p></div></div>
     </div>
-  </div>
-</section>
+  </div></section>
+</div>
 
-<section id="contact" class="cta">
-  <div class="wrap">
+<!-- CONTACT -->
+<div class="page" id="page-contact">
+  <section class="pad contact-page"><div class="wrap">
     <div class="cta-grid">
-      <div class="reveal">
-        <div class="eyebrow gold">Request Information</div>
+      <div>
+        <div class="eyebrow" style="color:var(--gold-light)">Request Information</div>
         <h2>Your next chapter deserves preparation.</h2>
-        <p>Tell us about the leader and the seat. We'll show you exactly how Sterling Elite would close the gap.</p>
+        <p>Tell us about the leader and the seat. We'll show you exactly how Sterling Elite will close the experience gap.</p>
         <div class="contact-line">
-          <strong style="color:#fff">Sterling Elite, LLC</strong><br>
+          <strong style="color:var(--cream)">Sterling Elite, LLC</strong><br>
           3225 McLeod Drive, Las Vegas, NV 89121<br>
           <a href="mailto:info@sterlingelite.com">info@sterlingelite.com</a><br>
           <a href="tel:+19453126709">(945) 312-6709</a>
         </div>
       </div>
-      <div class="reveal">
+      <div>
         <form id="leadForm" onsubmit="return seSubmit(event)">
           <div class="field"><label>Full Name</label><input required name="name" placeholder="Jane Executive"></div>
           <div class="field"><label>Company</label><input name="company" placeholder="Company name"></div>
           <div class="field"><label>Role / Seat</label>
             <select name="seat">
               <option value="">Select a seat…</option>
-              <option>CFO — Chief Financial Officer</option>
-              <option>COO — Chief Operating Officer</option>
-              <option>CEO — Chief Executive Officer</option>
+              <option>C-Suite — Finance</option>
+              <option>C-Suite — Operations</option>
+              <option>C-Suite — Chief Executive</option>
               <option>Other C-Suite / EVP</option>
               <option>Board / Sponsor</option>
             </select>
@@ -562,8 +447,52 @@
         </form>
       </div>
     </div>
-  </div>
-</section>
+  </div></section>
+</div>
+
+<!-- TERMS -->
+<div class="page" id="page-terms">
+  <section class="pad"><div class="wrap legal">
+    <h2>Terms of Service</h2>
+    <div class="updated">Last updated: <span class="yr-inline"></span></div>
+    <p>These Terms of Service ("Terms") govern your access to and use of the website and the executive development and advisory services offered by Sterling Elite, LLC ("Sterling Elite," "we," "us," or "our"). By accessing this website or engaging our services, you agree to these Terms.</p>
+    <h3>1. Services</h3>
+    <p>Sterling Elite provides executive education, coaching, and advisory services. The specific scope, deliverables, fees, and duration of any engagement are set out in a separate written agreement between Sterling Elite and the client. This website is informational and does not itself constitute an offer or a binding engagement.</p>
+    <h3>2. No Professional Advice</h3>
+    <p>Content provided through this website and our services is for professional development purposes and does not constitute legal, tax, accounting, investment, or other regulated professional advice. You should consult appropriately licensed professionals before making decisions with legal or financial consequences. Sterling Elite makes no guarantee of any specific business, career, or performance outcome.</p>
+    <h3>3. Confidentiality</h3>
+    <p>We treat client and engagement information as confidential in accordance with the applicable engagement agreement. Please do not submit confidential or sensitive information through public web forms.</p>
+    <h3>4. Intellectual Property</h3>
+    <p>All content, marks, frameworks, and materials on this site — including the Sterling Methodology — are the property of Sterling Elite or its licensors and may not be copied, distributed, or used to create derivative works without prior written consent.</p>
+    <h3>5. Limitation of Liability</h3>
+    <p>To the maximum extent permitted by law, Sterling Elite is not liable for any indirect, incidental, consequential, or punitive damages arising from your use of this website. Our total aggregate liability relating to any engagement is limited as set out in the applicable engagement agreement.</p>
+    <h3>6. Governing Law</h3>
+    <p>These Terms are governed by the laws of the State of Nevada, without regard to conflict-of-laws principles. Any dispute will be resolved as provided in the applicable engagement agreement.</p>
+    <h3>7. Contact</h3>
+    <p>Questions about these Terms may be directed to info@sterlingelite.com.</p>
+  </div></section>
+</div>
+
+<!-- PRIVACY -->
+<div class="page" id="page-privacy">
+  <section class="pad"><div class="wrap legal">
+    <h2>Privacy Policy</h2>
+    <div class="updated">Last updated: <span class="yr-inline"></span></div>
+    <p>This Privacy Policy explains how Sterling Elite, LLC ("Sterling Elite") collects, uses, and protects information you provide through this website.</p>
+    <h3>1. Information We Collect</h3>
+    <p>We collect the information you voluntarily provide through our contact form — such as your name, company, role, email, phone, and message. We may also collect standard technical data (such as browser type and general usage) through basic analytics.</p>
+    <h3>2. How We Use Information</h3>
+    <p>We use your information solely to respond to your inquiry, to provide and improve our services, and to communicate with you about Sterling Elite. We do not sell your personal information.</p>
+    <h3>3. Sharing</h3>
+    <p>We share information only with service providers who help us operate (such as email and hosting), under confidentiality obligations, or where required by law.</p>
+    <h3>4. Data Security &amp; Retention</h3>
+    <p>We use reasonable safeguards to protect your information and retain it only as long as needed for the purposes described here or as required by law.</p>
+    <h3>5. Your Choices</h3>
+    <p>You may request access to, correction of, or deletion of your personal information by contacting info@sterlingelite.com.</p>
+    <h3>6. Contact</h3>
+    <p>For privacy questions, contact info@sterlingelite.com or (945) 312-6709.</p>
+  </div></section>
+</div>
 
 </main>
 
@@ -571,53 +500,63 @@
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <svg><use href="#mono"/></svg>
-        <div>
-          <div class="fn">Sterling <span>Elite</span></div>
-          <div style="font-size:9px;letter-spacing:.24em;color:#7d8ba3;text-transform:uppercase;margin-top:3px">Executive Education &amp; Advisory · Closing the Experience Gap</div>
-        </div>
+        <img src="/logo-mark.png" alt="Sterling Elite">
+        <div class="fn">STERLING <b>ELITE</b></div>
+        <p>Lifelong executive development and advisory — closing the experience gap between being promoted and being proven.</p>
       </div>
-      <div class="foot-links">
-        <a href="#gap">The Gap</a><a href="#program">The Program</a><a href="#method">The Method</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <div class="foot-col">
+        <h5>Explore</h5>
+        <a data-page="platform">The Platform</a>
+        <a data-page="program">The Program</a>
+        <a data-page="method">The Method</a>
+        <a data-page="about">About</a>
+        <a data-page="founder">Founder</a>
+        <a data-page="contact">Request Information</a>
+      </div>
+      <div class="foot-col">
+        <h5>Contact</h5>
+        <a href="mailto:info@sterlingelite.com">info@sterlingelite.com</a>
+        <a href="tel:+19453126709">(945) 312-6709</a>
+        <a>3225 McLeod Drive<br>Las Vegas, NV 89121</a>
       </div>
     </div>
     <div class="foot-bottom">
-      <div>© <span id="yr"></span> Sterling Elite, LLC · 3225 McLeod Drive, Las Vegas, NV 89121</div>
-      <div>info@sterlingelite.com · (945) 312-6709</div>
+      <div>© <span class="yr-inline"></span> Sterling Elite, LLC. All rights reserved.</div>
+      <div class="foot-legal"><a data-page="terms">Terms of Service</a> &nbsp;·&nbsp; <a data-page="privacy">Privacy Policy</a> &nbsp;·&nbsp; <a data-page="contact">Contact</a></div>
     </div>
+    <div class="foot-disclaimer">Sterling Elite, LLC provides executive development, coaching, and advisory services and does not provide legal, tax, accounting, or investment advice. Engagement terms are governed by a separate written agreement. Sterling Elite makes no guarantee of any specific business, career, or performance outcome.</div>
   </div>
 </footer>
 
 <script>
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  // header shrink
-  addEventListener('scroll',()=>{document.getElementById('hdr').style.height=scrollY>40?'':'';});
-  // mobile close
-  document.querySelectorAll('#nl a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nl').classList.remove('open')));
-  // FAQ
+  document.querySelectorAll('.yr-inline').forEach(e=>e.textContent=new Date().getFullYear());
+  function toggleMenu(){document.body.classList.toggle('menu-open');}
+  function showPage(id){
+    if(!document.getElementById('page-'+id)) id='home';
+    document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+    document.getElementById('page-'+id).classList.add('active');
+    document.querySelectorAll('[data-page]').forEach(a=>a.classList.toggle('current',a.dataset.page===id));
+    document.body.classList.remove('menu-open');
+    window.scrollTo(0,0);
+    history.replaceState(null,'',id==='home'?location.pathname:'#'+id);
+  }
+  document.querySelectorAll('[data-page]').forEach(a=>a.addEventListener('click',function(e){e.preventDefault();showPage(this.dataset.page);}));
   document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>{
-    const it=q.parentElement, a=q.nextElementSibling, open=it.classList.contains('open');
+    const it=q.parentElement,a=q.nextElementSibling,open=it.classList.contains('open');
     document.querySelectorAll('.faq-item').forEach(x=>{x.classList.remove('open');x.querySelector('.faq-a').style.maxHeight=null;});
     if(!open){it.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}
   }));
-  // reveal on scroll
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-  // form (front-end demo; wire to email/CRM on launch)
   function seSubmit(e){
     e.preventDefault();
-    const f=e.target;
-    const data=Object.fromEntries(new FormData(f).entries());
+    const f=e.target,data=Object.fromEntries(new FormData(f).entries());
     const subject=encodeURIComponent('Sterling Elite — Information Request: '+(data.seat||'C-Suite'));
     const body=encodeURIComponent('Name: '+data.name+'\nCompany: '+(data.company||'')+'\nSeat: '+(data.seat||'')+'\nEmail: '+data.email+'\nPhone: '+(data.phone||'')+'\n\nSituation:\n'+(data.message||''));
     document.getElementById('ok').style.display='block';
     f.querySelector('button').textContent='Request Sent';
-    // open user's mail client pre-filled as a no-backend fallback
     window.location.href='mailto:info@sterlingelite.com?subject='+subject+'&body='+body;
     return false;
   }
+  showPage((location.hash||'#home').replace('#','')||'home');
 </script>
 </body>
 </html>
-
-<!-- build:20260630234151 -->
