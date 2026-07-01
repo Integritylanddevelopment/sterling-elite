@@ -60,11 +60,8 @@
   /* NAV */
   header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(5,13,26,0.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--gold-border);transition:var(--transition)}
   nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-  .brand{display:flex;align-items:center;gap:13px;color:var(--white)}
-  .brand svg{width:40px;height:40px;flex-shrink:0}
-  .brand-name{font-family:var(--serif);font-size:21px;font-weight:600;letter-spacing:1.5px;line-height:1.1}
-  .brand-name span{color:var(--gold)}
-  .brand-tag{font-size:8px;letter-spacing:.3em;color:var(--slate-light);text-transform:uppercase;margin-top:4px}
+  .brand{display:flex;align-items:center;color:var(--white)}
+  .brand-logo{height:52px;width:auto;display:block}
   .navlinks{display:flex;gap:28px;align-items:center}
   .navlinks a{font-size:12.5px;letter-spacing:.05em;color:#d8e4f0;transition:color .2s;font-weight:400}
   .navlinks a:hover{color:var(--gold)}
@@ -186,11 +183,8 @@
   /* FOOTER */
   footer{background:var(--deep);color:#8b9ab2;padding:56px 0 32px;border-top:1px solid rgba(212,146,42,0.15)}
   .foot-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:28px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.07)}
-  .foot-brand{display:flex;align-items:center;gap:13px;color:#fff}
-  .foot-brand svg{width:36px;height:36px;flex-shrink:0}
-  .foot-brand .fn{font-family:var(--serif);font-size:20px;letter-spacing:1.5px;font-weight:600}
-  .foot-brand .fn span{color:var(--gold)}
-  .foot-brand .ft{font-size:8px;letter-spacing:.28em;color:#5a6678;text-transform:uppercase;margin-top:4px}
+  .foot-brand{display:flex;align-items:center;color:#fff}
+  .foot-brand-logo{height:42px;width:auto;display:block}
   .foot-links{display:flex;gap:24px;flex-wrap:wrap}
   .foot-links a{font-size:13px;color:#8b9ab2;transition:color .2s;letter-spacing:.02em}
   .foot-links a:hover{color:var(--gold)}
@@ -210,6 +204,7 @@
     .navlinks a{padding:14px 32px;width:100%;border-radius:0}
     .navlinks .btn{margin:12px 32px 4px;width:calc(100% - 64px)}
     .menu-toggle{display:block}
+    .brand-logo{height:42px}
     .gap-grid,.about-grid,.cta-grid{grid-template-columns:1fr;gap:36px}
     .cards-inner{grid-template-columns:1fr}
     .card{border-right:0;border-bottom:1px solid var(--gold-border)}
@@ -265,11 +260,7 @@
   <div class="wrap">
     <nav>
       <a class="brand" href="#top">
-        <svg><use href="#emblem"/></svg>
-        <div>
-          <div class="brand-name">Sterling <span>Elite</span></div>
-          <div class="brand-tag">Executive Ascent · C-Suite Development</div>
-        </div>
+        <img src="sterling-elite-logo.png" alt="Sterling Elite" class="brand-logo">
       </a>
       <button class="menu-toggle" aria-label="Open menu" onclick="document.getElementById('nl').classList.toggle('open')">☰</button>
       <div class="navlinks" id="nl">
@@ -571,11 +562,7 @@
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <svg><use href="#emblem"/></svg>
-        <div>
-          <div class="fn">Sterling <span>Elite</span></div>
-          <div class="ft">Executive Ascent · C-Suite Development</div>
-        </div>
+        <img src="sterling-elite-logo.png" alt="Sterling Elite" class="foot-brand-logo">
       </div>
       <div class="foot-links">
         <a href="#gap">The Gap</a>
